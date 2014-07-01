@@ -45,7 +45,7 @@ public abstract class Try<T> {
 
     public static <A, B> Try<B> ttry(P1<B> f) {
         try {
-             B result = f._1();
+            B result = f._1();
             return success(result);
         } catch (Exception e) {
             return new Failure<>(e);
